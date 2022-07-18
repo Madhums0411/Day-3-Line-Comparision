@@ -31,13 +31,17 @@
         double Length2 = Math.Sqrt((A2 - A1) ^ 2 + (B2 - B1) ^ 2);
         Console.WriteLine("Length of second line is: " + Length2);
 
-        if (Length1 == Length2)
+        if (Length1 > Length2)
         {
-            Console.WriteLine("The two lines are equal in length");
+            Console.WriteLine("Length of first line is greater than second line");
+        }
+        else if (Length2 > Length1)
+        {
+            Console.WriteLine("Length of second line is greater than first line");
         }
         else
         {
-            Console.WriteLine("The two lines are not equal in lentgh");
+            Console.WriteLine("Both the line are equal");
         }
 
 
